@@ -45,6 +45,8 @@ jobs:
             target: aarch64-apple-ios-sim
           - name: ios-x86_64-simulator
             target: x86_64-apple-ios
+          - name: x86_64-apple-ios-macabi
+            target: x86_64-apple-ios-macabi
     env:
       TARGET: ${{ matrix.target }}
       ARCHIVE_NAME: wgpu-${{ matrix.name }}
